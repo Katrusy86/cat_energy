@@ -32,8 +32,95 @@
         </nav>
     </header>
     
-    <section class="page-main">
-        <h1 class=""></h1>
+    <main class="page-main">
+        <section class="main-header">
+            <h1 class="">Функциональное питание для котов</h1>
+            <p class="main-header__slogan">
+                Занялся собой? Займись котом!
+            </p>
+            <a href="#" class="main-header__choose button">Подобрать программу</a>
+        </section>
+    </main>
+
+    <section class="catalog">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul class="catalog__block">
+            <li class="catalog__item catalog__item--weightlose">
+                <h3 class="catalog__title">Похудение</h3>
+                <p class="catalog__description">
+                    Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? 
+                    Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
+                </p>
+                <a class="catalog__link" href="#">Каталог Slim</a>
+            </li>
+            <li class="catalog__item catalog__item--weight">
+                <h3 class="catalog__title">Набор массы</h3>
+                <p class="catalog__description">
+                    Заработать авторитет среди дворовых котов и даже собак?
+                    Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
+                </p>
+                <a class="catalog__link" href="#">Каталог Slim</a>
+            </li>
+        </ul>
+    </section>
+
+    <section class="advantages">
+        <h3 class="visually-hidden">Преимущества</h3>
+        <h2 class="advantages__header">Как это работает</h2>
+        <ul class="advantages__list">
+            <li class="advantages__item advantages__item--есо">
+                <p class="advantages__description">
+                    Функциональное питание содержит только полезные питательные вещества.
+                </p>
+            </li>
+            <li class="advantages__item advantages__item--powder">
+                <p class="advantages__description">
+                    Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+                </p>
+            </li>
+            <li class="advantages__item advantages__item--food">
+                <p class="advantages__description">
+                    Замените один-два приема обычной еды на наше функциональное питание.
+                </p>
+            </li>
+            <li class="advantages__item advantages__item--changes">
+                <p class="advantages__description">
+                    Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="sample">
+        <h3 class="visually-hidden">Образец</h3>
+        <h2 class="sample__header">Живой пример</h2>
+        <p class="sample__dexcription">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. 
+            Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. 
+        </p>
+        <table class="sample__result">
+            <tr class="sample__result--numder">
+                <td >5 кг</td>
+                <td>60 дней</td>
+            </tr>
+            <tr class="sample__result--describe">
+                <td>снижение веса</td>
+                <td>затрачено времени</td>
+            </tr>
+        </table>
+        <div class="sample__cost">Затраты на питание: 15 000 руб.</div>
+        <div id="slider-range">
+            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 0%;">
+                <label class="price-option" for="price">от
+                    <input type="text" name="price" readonly id="price">
+                </label>
+            </span>
+            <span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default" style="left: 36%;">
+                <label class="price-option" for="price2">до
+                    <input type="text" name="price2" readonly id="price2">
+                </label>
+            </span>
+        </div>
     </section>
 </body>
 </html>
