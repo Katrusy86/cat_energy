@@ -1,0 +1,70 @@
+
+@font-face {
+    font-family: "Oswald";
+    src: url('../fonts/Oswald/Oswald.eot') format('eot');
+    src: local('Oswald'),
+    url('../fonts/Oswald/Oswald.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Oswald/Oswald.ttf') format('truetype'),
+    url('../fonts/Oswald/Oswald.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Arial MT";
+    src: url('../fonts/Arial MT/Arial MT.eot') format('eot');
+    src: local('Arial MT'),
+    url('../fonts/Arial MT/Arial MT.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Arial MT/Arial MT.ttf') format('truetype'),
+    url('../fonts/Arial MT/Arial MT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-width:@body-width;
+    font-size:@body-size;
+    font-family: @fontOswald;
+    line-height: 18px;
+    font-style: normal;
+    .clear();
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 320px;
+    padding: 0px 20px;
+}
+
+.visually-hidden:not(:focus):not(:active){
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+@media (min-width:@tablet-width) {
+    .container {
+        width: 768px;
+        padding: 0px 55px;
+    }
+}
+
+@media (min-width:@desktop-width) {
+    .container {
+        width: 1223px;
+        padding: 0px 120px;
+    }
+}
+
+
