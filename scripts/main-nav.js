@@ -2,14 +2,14 @@
     $(function() {
       $('.menu__icon').on('click', function() {
         $(this).closest('.menu')
-          .toggleClass('show');
+          .toggleClass('menu--show');
       });
 
-      $('.show').on('click', function() {
+      $('.menu--show').on('click', function() {
         // do something
 
         $(this).closest('.menu')
-          .removeClass('show');
+          .removeClass('menu--show');
       });
     });
   })(jQuery);

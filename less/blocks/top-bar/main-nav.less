@@ -4,17 +4,17 @@
   background-color: #ffff;
 }
 
-@media (max-width:@mobile-width-only) {
+@media (max-width: @mobile-width-only) {
 
   .main-nav__wrapper {
     display: flex;
     justify-content: space-between;
-    width: 708px;
+    max-width: 708px;
     margin: 0 auto;
   }
 }
 
-@media (min-width:@tablet-width){
+@media (min-width: @tablet-width) {
 
   .main-nav {
     width: auto;
@@ -24,7 +24,7 @@
   .main-nav__wrapper {
     display: flex;
     justify-content:space-between;
-    width: 640px;
+    max-width: 640px;
     margin: 0 auto;
   }
 
@@ -34,8 +34,9 @@
 
 }
 
-@media (min-width:@desktop-width) {
+@media (min-width: @desktop-width) {
+
   .main-nav__wrapper {
-  width: 960px;
+    max-width: 960px;
   }
-  }
+}

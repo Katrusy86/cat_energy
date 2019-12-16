@@ -19,23 +19,23 @@ input:active {
   box-sizing: border-box;
 }
 @font-face {
-  font-family: "Oswald";
-  src: url('../fonts/Oswald/Oswald.eot') format('eot');
-  src: local('Oswald'), url('../fonts/Oswald/Oswald.eot?#iefix') format('embedded-opentype'), url('../fonts/Oswald/Oswald.ttf') format('truetype'), url('../fonts/Oswald/Oswald.woff') format('woff');
+  font-family: "Oswald-Regular";
+  src: url('../fonts/Oswald/Oswald-Regular.eot') format('eot');
+  src: local('Oswald'), url('../fonts/Oswald/Oswald-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype'), url('../fonts/Oswald/Oswald-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Arial MT";
-  src: url('../fonts/Arial MT/Arial MT.eot') format('eot');
-  src: local('Arial MT'), url('../fonts/Arial MT/Arial MT.eot?#iefix') format('embedded-opentype'), url('../fonts/Arial MT/Arial MT.ttf') format('truetype'), url('../fonts/Arial MT/Arial MT.woff') format('woff');
+  font-family: "Arial";
+  src: url('../fonts/Arial/Arial.eot') format('eot');
+  src: local('Arial MT'), url('../fonts/Arial/Arial.eot?#iefix') format('embedded-opentype'), url('../fonts/Arial/Arial.ttf') format('truetype'), url('../fonts/Arial/ArialMT.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 body {
   min-width: 320px;
   font-size: 14px;
-  font-family: "Oswald";
+  font-family: "Oswald-Regular";
   line-height: 18px;
   font-style: normal;
   padding: 0px;
@@ -47,7 +47,6 @@ img {
   height: auto;
 }
 .container {
-  width: 320px;
   padding: 0px 20px;
 }
 .visually-hidden:not(:focus):not(:active) {
@@ -65,14 +64,70 @@ img {
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding: 0px 55px;
   }
 }
 @media (min-width: 1441px) {
   .container {
-    width: 1223px;
+    max-width: 1223px;
     padding: 0px 120px;
+  }
+}
+.main-nav {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+  background-color: #ffff;
+}
+@media (max-width: 767px) {
+  .main-nav__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+  .main-nav__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+}
+@media (min-width: 1441px) {
+  .main-nav__wrapper {
+    max-width: 960px;
+  }
+}
+.page-main {
+  background: url(../images/index-background-mobile.png) no-repeat center top / cover;
+  height: 305px;
+}
+@media (min-width: 768px) {
+  .page-main {
+    background: none;
+    margin-bottom: 490px;
+  }
+}
+@media (min-width: 1441px) {
+  .page-main {
+    background: url(../images/index-background-desktop.png) no-repeat right top;
+    height: 700px;
+    margin-top: -100px;
   }
 }
 .page-header__block {
@@ -87,7 +142,7 @@ img {
 }
 .page-header__title {
   font-size: 20px;
-  font-family: "Oswald";
+  font-family: "Oswald-Regular";
   text-transform: uppercase;
   color: #000;
   margin: 0 auto;
@@ -104,66 +159,10 @@ img {
     margin-top: 60px;
   }
 }
-.main-nav {
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-  position: relative;
-  background-color: #ffff;
-}
-@media (max-width: 767px) {
-  .main-nav__wrapper {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    width: 708px;
-    margin: 0 auto;
-  }
-}
-@media (min-width: 768px) {
-  .main-nav {
-    width: auto;
-    margin: 0;
-  }
-  .main-nav__wrapper {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: justify;
-            justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
-  }
-  .main-nav__toggle {
-    display: none;
-  }
-}
-@media (min-width: 1441px) {
-  .main-nav__wrapper {
-    width: 960px;
-  }
-}
-.page-main {
-  background: url(../images/index-background-mobile.svg) no-repeat center top / cover;
-  height: 305px;
-}
-@media (min-width: 768px) {
-  .page-main {
-    background: none;
-    margin-bottom: 490px;
-  }
-}
-@media (min-width: 1441px) {
-  .page-main {
-    background: url(../images/index-background-desktop.png) no-repeat right top;
-    height: 700px;
-    margin-top: -100px;
-  }
-}
 .main-header__title {
   width: 278px;
   color: #ffffff;
-  font-family: "Oswald";
+  font-family: "Oswald-Regular";
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -174,7 +173,7 @@ img {
   width: 198px;
   height: 16px;
   color: #ffffff;
-  font-family: Oswald;
+  font-family: "Oswald-Regular";
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -229,7 +228,7 @@ img {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  font-family: "Oswald";
+  font-family: "Oswald-Regular";
   background-color: #ffff;
   border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
@@ -287,7 +286,7 @@ img {
 .menu__links-item {
   display: inline-block;
   color: #111111;
-  font-family: "Oswald";
+  font-family: "Oswald-Regular";
   font-size: 20px;
   font-weight: 500;
   line-height: 20px;
@@ -299,25 +298,25 @@ img {
 .menu__links-item:hover {
   text-decoration: underline;
 }
-.show .menu__icon span:nth-child(1) {
+.menu--show .menu__icon span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
-.show .menu__icon span:nth-child(2) {
+.menu--show .menu__icon span:nth-child(2) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
-.show .menu__icon span:nth-child(3) {
+.menu--show .menu__icon span:nth-child(3) {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
-.show .menu__icon span:nth-child(4) {
+.menu--show .menu__icon span:nth-child(4) {
   top: 18px;
   width: 0%;
   left: 50%;
 }
-.show .menu__links {
+.menu--show .menu__links {
   display: block;
 }
 @media screen and (max-width: 767px) {
@@ -367,7 +366,7 @@ img {
   text-align: center;
   color: #ffff;
   text-transform: uppercase;
-  font-family: "Oswald";
+  font-family: "Oswald-Regular";
   cursor: pointer;
 }
 @media (min-width: 768px) {
