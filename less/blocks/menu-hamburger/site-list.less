@@ -1,39 +1,48 @@
 .site-list {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .site-list a {
-    display: block;
-    padding: 12px 21px;
-    padding-bottom: 13px;
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
 
-    font-size: 20px;
-    line-height: 24px;
-    color: #000000;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: @font-oswald;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: @font-oswald;
 
-    background-color: #ffff;
-    border-top: 1px solid #e6e6e6;
-    border-bottom: 1px solid #e6e6e6;
+  background-color: #ffff;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
 
-    .site-list a[href] {
-        &:hover,
-        &:active {
-            background-color: #000000;
-            border-top-color: #000000;
-        }
+  .site-list a[href] {
+    &:hover,
+    &:active {
+      background-color: #000000;
+      border-top-color: #000000;
     }
+  }
 }
 
-
 @media (min-width: @tablet-width) {
-    .site-list a {
-        display: flex;
-        padding: 0px 8px;
-        background: none;
-        border: 0;
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 570px;
+  }
+  .site-list a {
+    padding: 0px 8px;
+    background: none;
+    border: none;
+  }
+}
 
-    }
+@media (min-width: @desktop-width) {
+  .site-list a {
+    color: #fff;
+  }
 }

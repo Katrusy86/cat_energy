@@ -112,13 +112,23 @@
 @media (min-width: @tablet-width) {
 
     .menu {
-        top: -29px;
+        top: -40px;
     }
 
     .menu__links {
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
-        width: 485px;
+        max-width: 485px;
+    }
+}
+
+
+@media (min-width: @desktop-width) {
+
+    .menu {
+        position: absolute;
+        z-index: 1000;
+        right: -250px;
     }
 }

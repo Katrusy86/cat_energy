@@ -1,4 +1,5 @@
 
+
 .page-header__block {
     display: flex;
 }
@@ -20,15 +21,32 @@
 }
 
 @media (min-width: @tablet-width) {
+
+    .page-header__logo {
+        background: url(../images/logo-tablet.png)no-repeat;
+        height: 80px;
+        width: 192px;
+        margin-top: 10px;
+    }
+
     .page-header__title {
-        margin:0;
-        padding-top: 24px;
+        font-size: 0;
     }
 }
 
 @media (min-width: @desktop-width) {
     .page-header__block {
         margin-top: 60px;
+    }
+
+    .page-header__logo {
+        background: url(../images/logo-desktop.png)no-repeat;
+        width: 218px;
+        height: 60px;
+    }
+
+    .page-header__title {
+        font-size: 0;
     }
 }
 
