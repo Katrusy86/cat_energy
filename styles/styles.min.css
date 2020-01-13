@@ -1,0 +1,416 @@
+/*General page*/
+a,
+a:hover,
+a:active,
+a:focus,
+button,
+input,
+button:hover,
+button:active,
+button:focus,
+input:focus,
+input:active {
+  text-decoration: none;
+  outline: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url('../fonts/Oswald/Oswald-Regular.eot') format('eot');
+  src: local('Oswald'), url('../fonts/Oswald/Oswald-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Oswald/Oswald-Regular.ttf') format('truetype'), url('../fonts/Oswald/Oswald-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Arial";
+  src: url('../fonts/Arial/Arial.eot') format('eot');
+  src: local('Arial MT'), url('../fonts/Arial/Arial.eot?#iefix') format('embedded-opentype'), url('../fonts/Arial/Arial.ttf') format('truetype'), url('../fonts/Arial/ArialMT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: "Oswald-Regular";
+  line-height: 18px;
+  font-style: normal;
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  padding: 0px 20px;
+}
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0px 55px;
+  }
+}
+@media (min-width: 1441px) {
+  .container {
+    max-width: 1223px;
+    padding: 0px 120px;
+  }
+}
+.main-nav {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+  background-color: #ffff;
+}
+@media (max-width: 767px) {
+  .main-nav__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+  .main-nav__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .main-nav__toggle {
+    display: none;
+  }
+}
+@media (min-width: 1441px) {
+  .main-nav__wrapper {
+    max-width: 960px;
+  }
+}
+.page-main {
+  background: url(../images/index-background-mobile.png) no-repeat center top / cover;
+  height: 305px;
+}
+@media (min-width: 768px) {
+  .page-main {
+    background: none;
+    margin-bottom: 490px;
+  }
+}
+@media (min-width: 1441px) {
+  .page-main {
+    background: url(../images/index-background-desktop.png) no-repeat right top;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+.page-header__block {
+  display: -webkit-box;
+  display: flex;
+}
+.page-header__logo {
+  background: url(../images/logo-mobile.svg) no-repeat center top / cover;
+  height: 40px;
+  width: 40px;
+  margin-top: 10px;
+}
+.page-header__title {
+  font-size: 20px;
+  font-family: "Oswald-Regular";
+  text-transform: uppercase;
+  color: #000;
+  margin: 0 auto;
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .page-header__logo {
+    background: url(../images/logo-tablet.png) no-repeat;
+    height: 80px;
+    width: 192px;
+    margin-top: 10px;
+  }
+  .page-header__title {
+    font-size: 0;
+  }
+}
+@media (min-width: 1441px) {
+  .page-header__block {
+    margin-top: 60px;
+  }
+  .page-header__logo {
+    background: url(../images/logo-desktop.png) no-repeat;
+    width: 218px;
+    height: 60px;
+  }
+  .page-header__title {
+    font-size: 0;
+  }
+}
+.main-header__title {
+  color: #ffffff;
+  font-family: "Oswald-Regular";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  padding-top: 28px;
+}
+.main-header__slogan {
+  color: #ffffff;
+  font-family: "Oswald-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.main-header__image {
+  background: url(../images/index-can-mobile.png) no-repeat;
+  height: 267px;
+}
+.main-header__button {
+  border: 1px solid #68b738;
+  background-color: #68b738;
+  padding: 12px 72px;
+}
+@media (min-width: 768px) {
+  .main-header__title {
+    color: #000000;
+    font-size: 60px;
+    width: 430px;
+    line-height: 48px;
+    text-align: inherit;
+  }
+  .main-header__slogan {
+    color: #000000;
+    font-size: 20px;
+    width: 325px;
+    margin: 0;
+  }
+  .main-header__image {
+    background: url(../images/index-can-tablet.png) no-repeat;
+    height: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1441px) {
+  .main-header__image {
+    background: url(../images/index-can.png) no-repeat right top;
+    height: 485px;
+  }
+  .main-header__title {
+    margin-top: 100px;
+  }
+}
+.site-list {
+  font-weight: bold;
+}
+.site-list a {
+  display: block;
+  padding: 12px 21px;
+  padding-bottom: 13px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Oswald-Regular";
+  background-color: #ffff;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.site-list a .site-list a[href]:hover,
+.site-list a .site-list a[href]:active {
+  background-color: #000000;
+  border-top-color: #000000;
+}
+@media (min-width: 768px) {
+  .site-list {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    width: 570px;
+  }
+  .site-list a {
+    padding: 0px 8px;
+    background: none;
+    border: none;
+  }
+}
+@media (min-width: 1441px) {
+  .site-list a {
+    color: #fff;
+  }
+}
+.menu {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+.menu__icon {
+  display: none;
+  width: 24px;
+  height: 18px;
+  position: relative;
+  cursor: pointer;
+}
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #333333;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+.menu__icon span:nth-child(2),
+.menu__icon span:nth-child(3) {
+  top: 7px;
+}
+.menu__icon span:nth-child(4) {
+  top: 14px;
+}
+.menu__links-item {
+  display: inline-block;
+  color: #111111;
+  font-family: "Oswald-Regular";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu__links-item:hover {
+  text-decoration: underline;
+}
+.menu--show .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.menu--show .menu__icon span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.menu--show .menu__icon span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.menu--show .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.menu--show .menu__links {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .menu__icon {
+    display: inline-block;
+  }
+  .menu__links {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 71px;
+    background-color: #ffffff;
+    z-index: 1000;
+    overflow: auto;
+  }
+  .menu__links-item {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    color: #111111;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    top: -40px;
+  }
+  .menu__links {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+    max-width: 485px;
+  }
+}
+@media (min-width: 1441px) {
+  .menu {
+    position: absolute;
+    z-index: 1000;
+    right: -250px;
+  }
+}
+.button {
+  width: 320px;
+}
+.button-title {
+  border: 1px solid #68b738;
+  background-color: #68b738;
+  padding: 10px 62px;
+  font-size: 20px;
+  text-align: center;
+  color: #ffff;
+  text-transform: uppercase;
+  font-family: "Oswald-Regular";
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .button {
+    left: 139px;
+    position: absolute;
+    top: 314px;
+  }
+  .button-title {
+    padding: 15px 23px;
+  }
+}
+.catalog {
+  margin-top: 156px;
+}

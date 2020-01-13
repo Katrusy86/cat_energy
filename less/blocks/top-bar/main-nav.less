@@ -1,0 +1,42 @@
+.main-nav {
+  .clear();
+  position: relative;
+  background-color: #ffff;
+}
+
+@media (max-width: @mobile-width-only) {
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @tablet-width) {
+
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    justify-content:space-between;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+}
+
+@media (min-width: @desktop-width) {
+
+  .main-nav__wrapper {
+    max-width: 960px;
+  }
+}

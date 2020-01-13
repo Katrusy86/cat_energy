@@ -1,0 +1,52 @@
+
+
+.page-header__block {
+    display: flex;
+}
+
+.page-header__logo {
+    background: url(../images/logo-mobile.svg)no-repeat center top /cover ;
+    height: 40px;
+    width: 40px;
+    margin-top: 10px;
+}
+
+.page-header__title {
+    font-size: @logo-size;
+    font-family: @font-oswald;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0 auto;
+    margin-top: 24px;
+}
+
+@media (min-width: @tablet-width) {
+
+    .page-header__logo {
+        background: url(../images/logo-tablet.png)no-repeat;
+        height: 80px;
+        width: 192px;
+        margin-top: 10px;
+    }
+
+    .page-header__title {
+        font-size: 0;
+    }
+}
+
+@media (min-width: @desktop-width) {
+    .page-header__block {
+        margin-top: 60px;
+    }
+
+    .page-header__logo {
+        background: url(../images/logo-desktop.png)no-repeat;
+        width: 218px;
+        height: 60px;
+    }
+
+    .page-header__title {
+        font-size: 0;
+    }
+}
+
